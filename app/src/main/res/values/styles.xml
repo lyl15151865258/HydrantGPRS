@@ -1,0 +1,86 @@
+<resources>
+    <!-- 自定义loading dialog -->
+
+    <!-- linearLayout vertical  <<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+    <!-- 设置页面每个item尾部图标 -->
+
+    <style name="Widget" />
+
+    <!-- app main menu style start! -->
+    <!-- 菜单layout的样式 -->
+
+    <!-- 菜单ImageView的样式 -->
+
+    <!-- 菜单TextView的样式 -->
+
+    <!-- project list text style bgein -->
+
+    <!-- viewpage文本  滑动标签标题 -->
+
+    <style name="button_common_blue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/btn_blue_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <style name="button_common_blue_s">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:background">@drawable/btn_blue_selector</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <!-- 列表用户头像的样式 -->
+
+    <!-- 加载滚动条样式 -->
+
+    <!-- 操作项样式 start -->
+
+
+    <!-- quick option style start -->
+
+    <!-- quick option style end -->
+
+    <!-- new hydrantUser information style-->
+
+    <!-- events list style start -->
+
+
+    <!-- events title -->
+
+    <!-- events list style end -->
+
+    <!--Created by fei on 2016/5/19.-->
+
+    <!-- 比较常用的宽高 -->
+
+    <!-- 横向线条 -->
+    <!-- 纵向线条 -->
+
+    <!-- Team菜单ImageView的样式 -->
+
+    <!-- Team菜单TextView的样式 -->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    </style>
+
+    <!--PopupWindow-->
+
+    <declare-styleable name="DownloadProgressBar">
+        <attr name="textSize" format="dimension"/>
+
+        <attr name="loadingColor" format="color"/>
+
+        <attr name="stopColor" format="color"/>
+
+        <attr name="radius" format="dimension"/>
+
+        <attr name="borderWidth" format="dimension"/>
+
+    </declare-styleable>
+</resources>

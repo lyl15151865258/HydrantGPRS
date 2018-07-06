@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 高德地图APIkey -->
+    <!-- 高德地图Web API key -->
+
+    <!-- 百度地图APIkey -->
+
+    <!-- Mob SharedSDK Mob-AppKey -->
+
+    <!-- Mob SharedSDK Mob-AppSecret -->
+
+    <!-- 友盟APP_KEY -->
+
+    <!-- 友盟UMENG_MESSAGE_SECRET -->
+
+    <!-- 友盟的QQ分享 -->
+
+    <!-- 微信AppID -->
+
+    <!-- 微信AppSecret -->
+
+    <!-- QQ的AppID -->
+
+    <!-- QQ的AppKey -->
+
+    <!-- 容联-云通讯app Id 设置ECPreferenceSettings-->
+    <!-- 容联-云通讯app Token -->
+
+    <!-- 表情云AppId -->
+    <!-- 表情云AppSecret -->
+
+</resources>

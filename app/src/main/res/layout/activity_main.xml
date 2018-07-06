@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBluePrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp_8"
+            android:text="智能消火栓网络设置"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_22" />
+
+        <ImageView
+            android:id="@+id/iv_search_bluetooth_device"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:contentDescription="@null"
+            android:src="@drawable/bluetooth_disconnected" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffefebe7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_imei"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_x"
+                    android:gravity="center"
+                    android:hint="消火栓IMEI号"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18" />
+
+                <Button
+                    android:id="@+id/btn_read_imei"
+                    style="@style/button_common_blue_s"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:text="@string/setgprsparameter_txtread" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5">
+
+                <EditText
+                    android:id="@+id/et_imei"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_x"
+                    android:gravity="center"
+                    android:hint="@string/setgprsparameter_imeihint"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+                <Button
+                    android:id="@+id/btn_set_imei"
+                    style="@style/button_common_blue_s"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/setgprsparameter_txtset" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_marginStart="@dimen/dp_10"
+                    android:text="网络设置:"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/darkgray" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_1"
+                    android:layout_weight="1"
+                    android:background="@color/darkgray" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvGprsParam"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:background="@drawable/edit_text_x"
+                android:gravity="center"
+                android:hint="网络连接方式、IP地址、端口号"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip">
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioTcpServer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_marginStart="@dimen/dp_10"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="@string/setgprsparameter_radiotcpserver"
+                        android:textColor="@color/black" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_weight="1"
+                        android:text="@string/setgprsparameter_radioudpserver"
+                        android:textColor="@color/black" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5">
+
+                <EditText
+                    android:id="@+id/et_ip"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="3"
+                    android:background="@drawable/edit_text_x"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ."
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="IP地址或域名"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/editTextPort"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_x"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="端口号"
+                    android:inputType="numberDecimal"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Button
+                    android:id="@+id/btnReadComm"
+                    style="@style/button_common_blue_s"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/setgprsparameter_txtread" />
+
+                <Button
+                    android:id="@+id/btnSetComm"
+                    style="@style/button_common_blue_s"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/setgprsparameter_txtset" />
+
+                <Button
+                    android:id="@+id/btnDomainNameDefault"
+                    style="@style/button_common_blue_s"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="出厂域名" />
+
+                <Button
+                    android:id="@+id/btnGprsDefault"
+                    style="@style/button_common_blue_s"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="出厂IP" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginStart="@dimen/dp_5"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_x"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16" />
+
+                    <View
+                        android:layout_width="@dimen/dp_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/darkgray" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_x"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_16" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/CheckBoxsyn"
+                    android:layout_width="35dp"
+                    android:layout_height="@dimen/dp_40"
+                    android:checked="true" />
+
+                <Button
+                    android:id="@+id/btn_change_time"
+                    style="@style/button_common_blue_s"
+                    android:layout_marginEnd="@dimen/dp_5"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:layout_marginRight="@dimen/dp_5"
+                    android:layout_marginStart="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/setparameter_adjusttime" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

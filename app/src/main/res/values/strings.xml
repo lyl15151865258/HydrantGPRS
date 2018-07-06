@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">网络修改</string>
+    <string name="zero_zero_zero_zero_zero_zero_zero_zero">00000000</string>
+
+    <string name="app_notice">您确定要断开当前蓝牙连接吗？</string>
+
+    <string name="amenderr_setCancle">取消</string>
+    <string name="amenderr_setOk">确认</string>
+
+    <string name="setparameter_adjusttime">校正时钟</string>
+
+    <string name="setgprsparameter_txtset">设置</string>
+    <string name="setgprsparameter_txtread">读取</string>
+    <string name="setgprsparameter_imeihint">请输入11位IMEI号</string>
+    <string name="setgprsparameter_radiotcpserver">TCP服务</string>
+    <string name="setgprsparameter_radioudpserver">UDP服务</string>
+
+
+    <string name="click_again_exit">再按一次退出程序</string>
+
+
+</resources>
